@@ -61,9 +61,9 @@ public class Tracker {
         if (index != -1) {
             int start = index + 1;
             int length = size - index;
+            System.arraycopy(items, start, items, index, length);
             items[size - 1] = null;
             size--;
-            System.arraycopy(items, start, items, index, length);
             rsl = true;
         }
         return rsl;
