@@ -8,7 +8,7 @@ public class TrackerSingleTest {
 
     @Test
     public void whenNewTrackerSingleEagerLoading1() {
-        assertEquals(TrackerSingleEagerLoading1.INSTANCE, TrackerSingleEagerLoading1.INSTANCE);
+        assertEquals(TrackerSingleEagerLoading1.INSTANCE.getInstance(), TrackerSingleEagerLoading1.INSTANCE.getInstance());
     }
 
     @Test
