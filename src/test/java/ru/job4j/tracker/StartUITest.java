@@ -59,8 +59,8 @@ public class StartUITest {
         List<UserAction> actions = List.of(new ExitAction());
         new StartUI(out).init(in, tracker, actions);
         assertThat(out.toString(), is(
-                "Menu." + System.lineSeparator() +
-                        "0. === Exit ===" + System.lineSeparator()
+                "Menu." + System.lineSeparator()
+                        + "0. === Exit ===" + System.lineSeparator()
         ));
     }
 
@@ -76,13 +76,13 @@ public class StartUITest {
         List<UserAction> actions = List.of(new FindAllAction(out), new ExitAction());
         new StartUI(out).init(in, tracker, actions);
         assertThat(out.toString(), is(
-                "Menu." + System.lineSeparator() +
-                        "0. === Find all items ===" + System.lineSeparator() +
-                        "1. === Exit ===" + System.lineSeparator() +
-                        "Item{id=1, name='test'}" + System.lineSeparator() +
-                        "Menu." + System.lineSeparator() +
-                        "0. === Find all items ===" + System.lineSeparator() +
-                        "1. === Exit ===" + System.lineSeparator()
+                "Menu." + System.lineSeparator()
+                        + "0. === Find all items ===" + System.lineSeparator()
+                        + "1. === Exit ===" + System.lineSeparator()
+                        + "Item{id=1, name='test'}" + System.lineSeparator()
+                        + "Menu." + System.lineSeparator()
+                        + "0. === Find all items ===" + System.lineSeparator()
+                        + "1. === Exit ===" + System.lineSeparator()
         ));
     }
 
@@ -98,13 +98,13 @@ public class StartUITest {
         List<UserAction> actions = List.of(new FindByIdAction(out), new ExitAction());
         new StartUI(out).init(in, tracker, actions);
         assertThat(out.toString(), is(
-                "Menu." + System.lineSeparator() +
-                        "0. === Find item by Id ===" + System.lineSeparator() +
-                        "1. === Exit ===" + System.lineSeparator() +
-                        "Item{id=1, name='test'}" + System.lineSeparator() +
-                        "Menu." + System.lineSeparator() +
-                        "0. === Find item by Id ===" + System.lineSeparator() +
-                        "1. === Exit ===" + System.lineSeparator()
+                "Menu." + System.lineSeparator()
+                       + "0. === Find item by Id ===" + System.lineSeparator()
+                       + "1. === Exit ===" + System.lineSeparator()
+                       + "Item{id=1, name='test'}" + System.lineSeparator()
+                       + "Menu." + System.lineSeparator()
+                       + "0. === Find item by Id ===" + System.lineSeparator()
+                       + "1. === Exit ===" + System.lineSeparator()
         ));
     }
 
@@ -120,13 +120,13 @@ public class StartUITest {
         List<UserAction> actions = List.of(new FindByNameAction(out), new ExitAction());
         new StartUI(out).init(in, tracker, actions);
         assertThat(out.toString(), is(
-                "Menu." + System.lineSeparator() +
-                        "0. === Find items by name ===" + System.lineSeparator() +
-                        "1. === Exit ===" + System.lineSeparator() +
-                        "Item{id=1, name='test'}" + System.lineSeparator() +
-                        "Menu." + System.lineSeparator() +
-                        "0. === Find items by name ===" + System.lineSeparator() +
-                        "1. === Exit ===" + System.lineSeparator()
+                "Menu." + System.lineSeparator()
+                       + "0. === Find items by name ===" + System.lineSeparator()
+                       + "1. === Exit ===" + System.lineSeparator()
+                       + "Item{id=1, name='test'}" + System.lineSeparator()
+                       + "Menu." + System.lineSeparator()
+                       + "0. === Find items by name ===" + System.lineSeparator()
+                       + "1. === Exit ===" + System.lineSeparator()
         ));
     }
 
