@@ -10,7 +10,7 @@ public class StubOutput implements Output {
         } else {
             buffer.append("null");
         }
-        buffer.append(System.lineSeparator());
+        buffer.append("\n");
     }
 
     @Override
